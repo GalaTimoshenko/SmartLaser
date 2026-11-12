@@ -137,7 +137,7 @@ td.num{white-space:nowrap}
 <main class="in view" id="view-staff" hidden><div class="card tablebox" id="staffTable"></div></main>
 <script src="xlsx.full.min.js"></script>
 <script>
-const DATA_URL="data/zakazy.xlsx";
+const DATA_URL="zakazy.xlsx";
 const STAGES=["Заявка/расчёт","КП отправлено","Договор/предоплата","Конструкторская документация","Закупка металла","Резка","Гибка","Мехобработка","Сварка","Сборка","Покраска","Электрика/наладка","ОТК/испытания","Упаковка","Отгрузка","Монтаж у заказчика","Закрыт"];
 const CLOSED=new Set(["Отгружен","Закрыт","Отменён"]);
 const XHEAD={num:"№ заказа",date:"Дата приёма",client:"Заказчик",contact:"Контакт (тел/имя)",item:"Изделие / что делаем",type:"Тип",sum:"Сумма, ₽",paid:"Оплачено, ₽",deadline:"Срок сдачи",stage:"Этап",worker:"Кто делает сейчас",resp:"Ответственный",status:"Статус",priority:"Приоритет",risk:"Проблема / риск",next:"Следующий шаг",updated:"Обновлено"};
